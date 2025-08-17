@@ -40,6 +40,8 @@
     "rimraf": "^5.0.0"
   },
   "dependencies": {
+    "@seald-io/nedb": "^4.1.1",
+    "ali-oss": "^6.23.0",
     "axios": "^1.7.0",
     "bcrypt-nodejs": "^0.0.3",
     "body-parser": "^1.20.2",
@@ -47,6 +49,7 @@
     "cheerio": "^1.0.0",
     "circular-json": "^0.5.9",
     "connect-history-api-fallback": "^2.0.0",
+    "cos-nodejs-sdk-v5": "^2.15.4",
     "electron-store": "^10.0.0",
     "express": "^4.18.2",
     "express-jwt": "^8.4.1",
@@ -65,8 +68,8 @@
     "lodash": "^4.17.21",
     "mime": "^3.0.0",
     "multer": "^1.4.5-lts.2",
-    "@seald-io/nedb": "^4.1.1",
     "node-fetch": "^3.3.2",
+    "qiniu": "^7.14.0",
     "serve-static": "^1.15.0",
     "uuid": "^10.0.0"
   },
@@ -97,15 +100,21 @@
       "target": [
         {
           "target": "dmg",
-          "arch": ["universal"]
-        },
-        {
-          "target": "dmg", 
-          "arch": ["arm64"]
+          "arch": [
+            "universal"
+          ]
         },
         {
           "target": "dmg",
-          "arch": ["x64"]
+          "arch": [
+            "arm64"
+          ]
+        },
+        {
+          "target": "dmg",
+          "arch": [
+            "x64"
+          ]
         }
       ]
     },
@@ -114,7 +123,10 @@
       "target": [
         {
           "target": "nsis",
-          "arch": ["x64", "ia32"]
+          "arch": [
+            "x64",
+            "ia32"
+          ]
         }
       ]
     },
@@ -123,7 +135,9 @@
       "target": [
         {
           "target": "AppImage",
-          "arch": ["x64"]
+          "arch": [
+            "x64"
+          ]
         }
       ]
     },

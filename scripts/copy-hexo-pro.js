@@ -63,7 +63,8 @@ async function copyHexoProCore() {
       'db.js',
       'utils.js',
       'debug.js',
-      'update.js'
+      'update.js',
+      'recycle_api.js'
     ];
     
     // 复制核心 JavaScript 文件
